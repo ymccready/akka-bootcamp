@@ -31,7 +31,7 @@ namespace WinTail
             consoleReaderActor.Tell(ConsoleReaderActor.StartCommand);
 
             // Fake start with 
-            //validationActor.Tell(@"c:\MyFile.txt");
+            validationActor.Tell(@"c:\MyFile.txt");
 
             // blocks the main thread from exiting until the actor system is shut down
             MyActorSystem.AwaitTermination();
